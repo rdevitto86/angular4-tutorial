@@ -1,0 +1,6 @@
+<h3>Shipping Prices</h3>
+
+<div class="shopping-item" *ngFor="let option of shippingCosts | async">
+  <span>{{option.type + ': '}}</span>
+  <span>{{option.price | currency}}</span>
+</div>
